@@ -1,0 +1,6 @@
+<%= form_for @tweet do |f| %>
+    <%= f.label :body %>
+    <%= f.text_field :body, :size => 140 %> 
+    <%= image_tag @tweet.image_url, size: "250x200" %>
+    <%= f.submit "編集する" %>
+  <% end %>
